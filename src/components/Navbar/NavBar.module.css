@@ -1,0 +1,20 @@
+
+.linksStyles {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 500;
+}
+
+.divLinks {
+    padding-top: 35px;
+}
+
+.mainStyle{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    height: 100px;
+    background-color: #001b2a;
+}

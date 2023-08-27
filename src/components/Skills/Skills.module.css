@@ -1,0 +1,22 @@
+.divGeneral{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #215669;
+}
+
+.divPorHabilidad{
+    height: min-content;
+    border: 2px solid black;
+    width: 300px;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.textStyle{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}

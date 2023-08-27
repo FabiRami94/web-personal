@@ -1,13 +1,21 @@
-
+import React from "react";
 
 class Portafolio extends React.Component {
-    constructor(){
+    // constructor(){
 
-    }
+    // }
 
     render(){
         return (
-            <h1>Soy el Portafolio por clase</h1>
+            <div>
+                <h1>Rick and Morty</h1>
+                <h1>Building Trade</h1>
+                <h1>Proyecto individual</h1>
+                <h1>Proyecto grupal</h1>
+                <h1>Venta llaveros pri</h1>
+                <h1>Venta Shannen</h1>
+            </div>
+
         )
     }
 }
