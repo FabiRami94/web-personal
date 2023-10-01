@@ -1,7 +1,7 @@
 import React from "react"
-import { NavLink } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import { Link } from 'react-scroll';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
 
 
 const NavBar = () => {
@@ -9,7 +9,7 @@ const NavBar = () => {
     return(
         <main className={styles.mainStyle}>
             <div>
-                <h1 style={{color: 'white'}}>FabiRami94.</h1>
+                <h1 style={{color: 'white', paddingLeft: '50px'}}>FabiRami94.</h1>
             </div>
             <div className={styles.divLinks}>
                 <Link 
@@ -42,11 +42,14 @@ const NavBar = () => {
                     smooth={true} 
                     offset={200} 
                     duration={500}>Contacto</Link>
-                {/* <NavLink className={styles.linksStyles} to={'/'}>Home</NavLink>
-                <NavLink className={styles.linksStyles} to={'/acerca/experiencia'}>Acerca/Experiencia</NavLink>
-                <NavLink className={styles.linksStyles} to={'/habilidades'}>Habilidades</NavLink>
-                <NavLink className={styles.linksStyles} to={'/portafolio'}>Portafolio</NavLink>
-                <NavLink className={styles.linksStyles} to={'/contacto'}>Contacto</NavLink>        */}
+                <div className={styles.generalContainer}>
+                <a href="https://www.linkedin.com/in/fabian-ramirez-6a395b156/" target='_blank' rel="noreferrer">         
+                    <div className={styles.buttonMedia}><BsLinkedin size={20}/></div>
+                </a>
+                <a href="https://github.com/FabiRami94" target="_blank" rel="noreferrer">
+                    <div className={styles.buttonMedia}><BsGithub size={20}/></div>
+                </a>           
+                </div>
             </div>
         </main>
     )
