@@ -1,108 +1,90 @@
 
+import { GrReactjs, GrNode } from 'react-icons/gr';
+import { TbBrandTypescript, TbBrandCss3 } from 'react-icons/tb';
+import { RiJavascriptLine } from 'react-icons/ri';
+import { AiOutlineHtml5 } from 'react-icons/ai';
+import { BsGithub } from 'react-icons/bs';
+import { SiExpress, SiPostgresql, SiSequelize} from 'react-icons/si';
 
-const habilidadesEnLenguaje = [
-    {nombre : 'Javascript', colors: {
-        color1 : '#007b00',
-        color2 : '#007b00',
-        color3 : '#007b00',
-        color4 : '#007b00',
-        color5 : '#007b00',
-        color6 : 'rgb(255, 255, 255, 0.3)'}},
-    {nombre : 'Typescript', colors: {
-        color1 : '#007b00',
-        color2 : '#007b00',
-        color3 : '#007b00',
-        color4 : 'rgb(255, 255, 255, 0.3)',
-        color5 : 'rgb(255, 255, 255, 0.3)',
-        color6 : 'rgb(255, 255, 255, 0.3)'}},
-    {nombre : 'Html', colors: {
-        color1 : '#007b00',
-        color2 : '#007b00',
-        color3 : '#007b00',
-        color4 : '#007b00',
-        color5 : 'rgb(255, 255, 255, 0.3)',
-        color6 : 'rgb(255, 255, 255, 0.3)'}},
-    {nombre : 'CSS', colors: {
-        color1 : '#007b00',
-        color2 : '#007b00',
-        color3 : '#007b00',
-        color4 : 'rgb(255, 255, 255, 0.3)',
-        color5 : 'rgb(255, 255, 255, 0.3)',
-        color6 : 'rgb(255, 255, 255, 0.3)'}},
-    {nombre : 'Dart', colors: {
-        color1 : '#007b00',
-        color2 : '#007b00',
-        color3 : '#007b00',
-        color4 : 'rgb(255, 255, 255, 0.3)',
-        color5 : 'rgb(255, 255, 255, 0.3)',
-        color6 : 'rgb(255, 255, 255, 0.3)'}},
+const habilidadesProgramacion = [
+    {   
+        image: '',
+        name: 'React', 
+        icon: <GrReactjs size={40} color='#49b4b2'/>,
+        link: 'https://es.react.dev/'
+    },
+    {   
+        image: '',
+        name : 'Javascript',
+        icon: <RiJavascriptLine size={40} color='#49b4b2'/>,
+        link: 'https://developer.mozilla.org/es/docs/Web/JavaScript'
+    },
+    {   
+        image: '',
+        name : 'Typescript', 
+        icon: <TbBrandTypescript size={36} color='#49b4b2'/>,
+        link: 'https://www.typescriptlang.org/'
+    },
+    {
+        image: '',
+        name : 'Html', 
+        icon: <AiOutlineHtml5 size={40} color='#49b4b2'/>,
+        link: 'https://developer.mozilla.org/es/docs/Web/HTML'
+    },
+    {
+        image: '',
+        name : 'CSS', 
+        icon: <TbBrandCss3 size={40} color='#49b4b2'/>,
+        link: 'https://developer.mozilla.org/es/docs/Web/CSS'
+    },
+    {   
+        image: '',
+        name: 'GitHub', 
+        icon: <BsGithub size={36} color='#49b4b2'/>,
+        link: 'https://github.com/'
+    },
+    {
+        image: '',
+        name: 'Nodejs', 
+        icon: <GrNode size={36} color='#49b4b2'/>,
+        link: 'https://nodejs.org/es'
+    },
+    {
+        image: '',
+        name: 'Express', 
+        icon: <SiExpress size={40} color='#49b4b2'/>,
+        link: 'https://expressjs.com/es/'
+    },
+    {
+        image: 'https://i.ibb.co/6DqrN3p/Logo-Postgres.png',
+        name: 'Postgres', 
+        icon: <SiPostgresql size={40} color='#49b4b2'/>,
+        link: 'https://www.postgresql.org/'
+    },
+    {
+        image: '',
+        name: 'Sequelize', 
+        icon: <SiSequelize size={40} color='#49b4b2'/>,
+        link: 'https://sequelize.org/'
+    },
 ]
 
-const habilidadesEnFrameworks = [
-    {nombre : 'React', colors: {
-        color1 : '#007b00',
-        color2 : '#007b00',
-        color3 : '#007b00',
-        color4 : '#007b00',
-        color5 : 'rgb(255, 255, 255, 0.3)',
-        color6 : 'rgb(255, 255, 255, 0.3)'}},
-    {nombre : 'Flutter', colors: {
-        color1 : '#007b00',
-        color2 : '#007b00',
-        color3 : '#007b00',
-        color4 : 'rgb(255, 255, 255, 0.3)',
-        color5 : 'rgb(255, 255, 255, 0.3)',
-        color6 : 'rgb(255, 255, 255, 0.3)'}},
-]
+// const habilidadesEnIdiomas = [
+//     {
+//         name: 'Español',
+//         letra: '',
+//         nivel: ''
+//     },
+//     {
+//         name: 'Inglés',
+//         letra: '',
+//         nivel: ''
+//     },
+//     {
+//         name: 'Italiano',
+//         letra: '',
+//         nivel: ''
+//     },
+// ]
 
-const habilidadesEnBackEnd = [
-    {nombre : 'Nodejs', colors: {
-        color1 : '#007b00',
-        color2 : '#007b00',
-        color3 : 'rgb(255, 255, 255, 0.3)',
-        color4 : 'rgb(255, 255, 255, 0.3)',
-        color5 : 'rgb(255, 255, 255, 0.3)',
-        color6 : 'rgb(255, 255, 255, 0.3)'}},
-]
-
-const habilidadesEnOtros = [
-    {nombre : 'GitHub', colors: {
-        color1 : '#007b00',
-        color2 : '#007b00',
-        color3 : '#007b00',
-        color4 : 'rgb(255, 255, 255, 0.3)',
-        color5 : 'rgb(255, 255, 255, 0.3)',
-        color6 : 'rgb(255, 255, 255, 0.3)'}},
-]
-
-const habilidadesEnIdiomas = [
-    {nombre : 'Español', colors: {
-        color1 : '#007b00',
-        color2 : '#007b00',
-        color3 : '#007b00',
-        color4 : '#007b00',
-        color5 : '#007b00',
-        color6 : 'rgb(255, 255, 255, 0.3)'}},
-    {nombre : 'Inglés', colors: {
-        color1 : '#007b00',
-        color2 : '#007b00',
-        color3 : '#007b00',
-        color4 : 'rgb(255, 255, 255, 0.3)',
-        color5 : 'rgb(255, 255, 255, 0.3)',
-        color6 : 'rgb(255, 255, 255, 0.3)'}},
-    {nombre : 'Italiano', colors: {
-        color1 : '#007b00',
-        color2 : '#007b00',
-        color3 : 'rgb(255, 255, 255, 0.3)',
-        color4 : 'rgb(255, 255, 255, 0.3)',
-        color5 : 'rgb(255, 255, 255, 0.3)',
-        color6 : 'rgb(255, 255, 255, 0.3)'}},
-]
-
-module.exports = {
-    habilidadesEnLenguaje, 
-    habilidadesEnBackEnd, 
-    habilidadesEnFrameworks, 
-    habilidadesEnIdiomas, 
-    habilidadesEnOtros
-}
+export default habilidadesProgramacion;
